@@ -150,15 +150,108 @@ h1, h2 {
     user-select: none;
 }
 
-@media (min-width: 1440px) {
-    .frame { padding: 32px; }
-    .hero { padding: 64px 20px; }
-    .hero-title { font-size: 2.6rem; }
-    .hero-text { font-size: 1rem; }
-    .btn-cta { font-size: 0.8rem; padding: 8px 24px; }
-    .card-title-custom { font-size: 1.5rem; }
-    .card-text-custom { font-size: 0.95rem; }
-    .card-block ul { font-size: 0.9rem; }
-    .report-title { font-size: 1.3rem; }
-    .header-icon { width: 36px; height: 36px; }
+@media (min-width: 768px) {
+    .frame {padding: 32px;}
+    .hero {padding: 64px 20px;}
+    .hero-title {font-size: 2.6rem;}
+    .hero-text {font-size: 1rem;}
+    .btn-cta {font-size: 0.8rem; padding: 8px 24px;}
+    .card-title-custom {font-size: 1.5rem;}
+    .card-text-custom {font-size: 0.95rem;}
+    .card-block ul {font-size: 0.9rem;}
+    .report-title {font-size: 1.3rem;}
+    .header-icon {width: 36px; height: 36px;}
+}
+
+}
+@media (max-width: 768px) {
+
+    .frame {
+        padding: 16px;
+    }
+
+    .header-bar .icon {
+        display: none;
+    }
+    .header-bar::after {
+        content: "CONTÁCTANOS";
+        display: inline-block;
+        padding: 5px 14px;
+        border-radius: 20px;
+        background-color: var(--light);
+        color: var(--dark);
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 0.65rem;
+        text-align: center;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .hero {
+        padding: 36px 20px;
+    }
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    .hero-text {
+        max-width: 560px;
+        font-size: 0.8rem;
+    }
+
+    .row > section.col-md-4 {
+        width: 33.33333333%;
+    }
+    .card-block {
+        padding: 16px 8px;
+    }
+    .card-title-custom {
+        font-size: 1.05rem;
+        max-width: 9.5em;
+        margin: 0 auto 10px;
+        text-wrap: balance;
+    }
+    .card-text-custom {
+        max-width: none;
+        font-size: 0.7rem;
+    }
+    .card-block ul {
+        font-size: 0.65rem;
+        padding-left: 16px;
+    }
+
+    .report {
+        padding: 20px 20px 24px;
+    }
+    .report-title {
+        font-size: 1.1rem;
+    }
+    .report .row > div:first-child {
+        width: 100%;
+    }
+    .report .row > div:last-child {
+        display: none;
+    }
+    .report .img-fluid {
+        width: 100%;
+    }
+
+    .footer-block {
+        padding: 16px;
+    }
+    .footer-title {
+        font-size: 1.2rem;
+    }
+    .footer-block > .d-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+    }
+    .footer-block small,
+    .footer-links span {
+        font-size: 0.75rem;
+    }
+    .footer-links {
+        gap: 1.25rem;
+    }
 }
